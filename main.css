@@ -13,6 +13,11 @@
     text-align: center;
     color: aqua;
     height: 70vh;
+    overflow:scroll;
+    overflow-x: hidden;
+}
+.comments {
+    color: palevioletred;
 }
 .footer {
     background: black;
