@@ -25,6 +25,9 @@
     height: 250px;
     width: 500px;
 }
+#likes:hover {
+    cursor: pointer;
+}
 .image:hover {
     animation: animatePic 1s ease-in 0.1s 1;
 }
@@ -33,6 +36,7 @@
     height: 30px;
 }
 .get-dog:hover {
+    cursor: pointer;
     animation: animatePic 1s ease-in 0.1s 1;
 }
 .red {
