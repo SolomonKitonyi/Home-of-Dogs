@@ -7,6 +7,7 @@
     padding: 5px;
     position: fixed;
     width: 100%;
+    animation: animateHeader 8s ease-out 1s infinite;
 }
 .main {
     margin-top: 5rem;
@@ -16,14 +17,23 @@
     overflow:scroll;
     overflow-x: hidden;
 }
+.main h1 {
+    animation: animateTitle 8s ease-in infinite;
+}
 .image img{
     box-shadow: 0px 5px 5px 6px bisque;
     height: 250px;
     width: 500px;
 }
+.image:hover {
+    animation: animatePic 1s ease-in 0.1s 1;
+}
 .get-dog {
     background: aqua;
     height: 30px;
+}
+.get-dog:hover {
+    animation: animatePic 1s ease-in 0.1s 1;
 }
 .red {
     color: red;
@@ -48,4 +58,55 @@ input {
     width: 100%;
     left: 0;
     bottom: 0;
+}
+@keyframes animatePic {
+    0% {
+            transform: skewY(0);
+        }
+    
+        50% {
+            transform: skewY(15deg);
+        }
+    
+        75% {
+            transform: skewY(-10deg);
+        }
+    
+        100% {
+            transform: skewY(0);
+        }
+}
+@keyframes animateHeader {
+    0% {
+        background: gray;
+    }
+
+    50% {
+        background: aliceblue;
+    }
+
+    75% {
+        background: azure;
+    }
+
+    100% {
+        background: aqua;
+    }
+}
+@keyframes animateTitle {
+    0% {
+        color: purple;
+    }
+
+    50% {
+        color: green;
+    }
+
+    75% {
+        color:violet;
+    }
+
+    100% {
+        color: aqua;
+    }
 }
