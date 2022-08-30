@@ -16,6 +16,16 @@
     overflow:scroll;
     overflow-x: hidden;
 }
+.image img{
+    box-shadow: 0px 5px 5px 6px bisque;
+}
+input {
+    height: 20px;
+}
+#comment-btn {
+    height: 20px;
+    background: aqua;
+}
 .comments {
     color: palevioletred;
 }
