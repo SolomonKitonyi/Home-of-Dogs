@@ -18,7 +18,6 @@ document.addEventListener("DOMContentLoaded", () => {
     form.addEventListener("submit",(e) => {
         e.preventDefault()
         let input = document.querySelector("#comment-input")
-        console.log(input.value)
         let p = document.createElement("p")
         p.textContent= input.value
         let comments = document.querySelector(".comments")
